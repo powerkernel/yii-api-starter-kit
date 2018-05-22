@@ -1,0 +1,17 @@
+#!/usr/bin/env php
+<?php
+/**
+ * @author Harry Tang <harry@powerkernel.com>
+ * @link https://powerkernel.com
+ * @copyright Copyright (c) 2018 Power Kernel
+ */
+
+/**
+ * Yii console bootstrap file.
+ */
+require __DIR__ . '/../vendor/autoload.php';
+$config = require __DIR__ . '/../config/console.php';
+
+$application = new yii\console\Application($config);
+$exitCode = $application->run();
+exit($exitCode);
