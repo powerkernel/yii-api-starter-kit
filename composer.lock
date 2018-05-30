@@ -183,7 +183,7 @@
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:powerkernel/yii-common.git",
-                "reference": "7545dc4bf38f487d2bce2c5411af65710b845447"
+                "reference": "f1a93d6a94c1b088f80b8bbfb49225fc4b1dfe58"
             },
             "type": "yii2-module",
             "extra": {
@@ -211,7 +211,7 @@
                 "common",
                 "yii2"
             ],
-            "time": "2018-05-21T18:34:18+00:00"
+            "time": "2018-05-28T09:23:29+00:00"
         },
         {
             "name": "powerkernel/yii-core-api",
@@ -219,7 +219,7 @@
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:powerkernel/yii-core-api.git",
-                "reference": "2f4665416656a6f90df4ca7234a12ba20201b4ed"
+                "reference": "8e7de355e4d540da0eb92b895d334f31a437625a"
             },
             "type": "yii2-module",
             "extra": {
@@ -248,7 +248,7 @@
                 "core",
                 "yii2"
             ],
-            "time": "2018-05-22T06:47:03+00:00"
+            "time": "2018-05-28T09:00:12+00:00"
         },
         {
             "name": "psr/http-message",

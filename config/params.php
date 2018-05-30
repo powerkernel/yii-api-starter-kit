@@ -9,4 +9,9 @@ return [
     'languages' => [
         'en-US',
     ],
+    'demo_account'=>[
+    ],
+    'mailer'=>[
+        'from'=>['your-email@domain.com'=>'your name'],
+    ]
 ];

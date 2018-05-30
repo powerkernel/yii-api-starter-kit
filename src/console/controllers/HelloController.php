@@ -36,7 +36,7 @@ class HelloController extends Controller
     public function actionUsers()
     {
         $faker = \Faker\Factory::create();
-        for ($i = 0; $i < 50; $i++) {
+        for ($i = 0; $i < 100; $i++) {
             $user[$i] = new User();
             $user[$i]->name = $faker->name;
             $user[$i]->email = $faker->email;

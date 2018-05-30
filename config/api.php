@@ -9,7 +9,8 @@ defined('YII_DEBUG') or define('YII_DEBUG', true);
 defined('YII_ENV') or define('YII_ENV', 'dev');
 
 
-$db = require __DIR__ . '/db.php';
+
+$common = require __DIR__ . '/common.php';
 $params = array_merge(
     require(__DIR__ . '/params.php'),
     require(__DIR__ . '/params-local.php')
@@ -19,7 +20,7 @@ $config = [
     'id' => 'app-api',
     'basePath' => dirname(__DIR__) . '/src/api',
     'vendorPath' => dirname(__DIR__) . '/vendor',
-    'controllerNamespace'=>'api\controllers',
+    'controllerNamespace' => 'api\controllers',
     'bootstrap' => ['configuration'],
     'aliases' => [
         '@bower' => '@vendor/bower-asset',
@@ -35,7 +36,7 @@ $config = [
         ],
     ],
     'components' => [
-        'configuration'=>['__class'=>'api\bootstrap\Configuration'],
+        'configuration' => ['__class' => 'api\bootstrap\Configuration'],
         'cache' => [
             '__class' => yii\caching\Cache::class,
             'handler' => [
@@ -43,13 +44,11 @@ $config = [
                 'keyPrefix' => 'app-api',
             ],
         ],
-        'mailer' => [
-            '__class' => yii\swiftmailer\Mailer::class,
-        ],
+        'mongodb' => $common['components']['mongodb'],
+        'mailer' => $common['components']['mailer'],
         'mutex' => [
             '__class' => yii\mutex\FileMutex::class
         ],
-        'db' => $db,
         'i18n' => [
             'translations' => [
                 '*' => [
@@ -85,7 +84,7 @@ $config = [
 //            'errorAction' => 'site/error',
 //        ],
         'urlManager' => [
-            '__class'=>yii\web\UrlManager::class,
+            '__class' => yii\web\UrlManager::class,
             'enablePrettyUrl' => true,
             'showScriptName' => false,
 
