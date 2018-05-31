@@ -26,7 +26,8 @@
     "yiisoft/yii2-httpclient": "2.1.x-dev",
 
     "powerkernel/yii-common": "@dev",
-    "powerkernel/yii-core-api": "@dev"
+    "powerkernel/yii-core-api": "@dev",
+    "powerkernel/yii-aws-sns": "@dev"
   },
   "require-dev": {
     "yiisoft/yii2-debug": "2.1.x-dev",

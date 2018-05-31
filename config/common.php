@@ -31,6 +31,12 @@ $config = [
                 'encryption' => $secrets['mailer']['transport']['encryption'],
             ],
         ],
+        'sns' => [
+            '__class' => powerkernel\sns\AwsSns::class,
+            'key' => $secrets['awssns']['key'],
+            'secret' => $secrets['awssns']['secret'],
+            'region' => $secrets['awssns']['region'],
+        ]
     ]
 ];
 

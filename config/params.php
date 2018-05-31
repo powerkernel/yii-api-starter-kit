@@ -13,5 +13,23 @@ return [
     ],
     'mailer'=>[
         'from'=>['your-email@domain.com'=>'your name'],
+    ],
+    'organization'=>[
+        'legalName'=>'Power Kernel Inc',
+        'address'=>'', // String
+        'social'=>[
+            'google'=>[
+                'url',
+                'icon',
+            ],
+            'facebook'=>[
+                'url',
+                'icon',
+            ],
+            // ...
+        ],
+    ],
+    'logos'=>[
+        'email'=>'', // URL
     ]
 ];

@@ -37,6 +37,10 @@ $config = [
     ],
     'components' => [
         'configuration' => ['__class' => 'api\bootstrap\Configuration'],
+        'mongodb' => $common['components']['mongodb'],
+        'mailer' => $common['components']['mailer'],
+        'sns' => $common['components']['sns'],
+
         'cache' => [
             '__class' => yii\caching\Cache::class,
             'handler' => [
@@ -44,8 +48,6 @@ $config = [
                 'keyPrefix' => 'app-api',
             ],
         ],
-        'mongodb' => $common['components']['mongodb'],
-        'mailer' => $common['components']['mailer'],
         'mutex' => [
             '__class' => yii\mutex\FileMutex::class
         ],
@@ -57,6 +59,7 @@ $config = [
             ],
         ],
         'request' => [
+            'enableCookieValidation'=>false,
             'parsers' => [
                 'application/json' => 'yii\web\JsonParser',
             ]
@@ -90,9 +93,10 @@ $config = [
 
         ],
         'user' => [
-            'identityClass' => 'powerkernel\core\models\User',
+            'identityClass' => 'powerkernel\yiicore\models\User',
             'enableAutoLogin' => false,
             'enableSession' => false,
+            'loginUrl'=>null,
             //'identityCookie' => ['name' => '_identity-api', 'httpOnly' => true],
         ],
     ],
