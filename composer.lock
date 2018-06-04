@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.59.0",
+            "version": "3.60.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "91149ea885f951eac91563a56263cfa4a8f48f6c"
+                "reference": "172ed6346ab4d1df075f5106098ed5b6e653c934"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/91149ea885f951eac91563a56263cfa4a8f48f6c",
-                "reference": "91149ea885f951eac91563a56263cfa4a8f48f6c",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/172ed6346ab4d1df075f5106098ed5b6e653c934",
+                "reference": "172ed6346ab4d1df075f5106098ed5b6e653c934",
                 "shasum": ""
             },
             "require": {
@@ -84,7 +84,7 @@
                 "s3",
                 "sdk"
             ],
-            "time": "2018-05-31T01:08:17+00:00"
+            "time": "2018-06-01T20:17:58+00:00"
         },
         {
             "name": "cebe/markdown",
@@ -495,16 +495,16 @@
         },
         {
             "name": "powerkernel/yii-aws-sns",
-            "version": "dev-master",
+            "version": "1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/powerkernel/yii-aws-sns.git",
-                "reference": "a80f9578dc0e29510cfa8532399f4cfbb7a09fe6"
+                "reference": "6d48e4cd503dff089c1f314c7618bc1d4fa6dcba"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/powerkernel/yii-aws-sns/zipball/a80f9578dc0e29510cfa8532399f4cfbb7a09fe6",
-                "reference": "a80f9578dc0e29510cfa8532399f4cfbb7a09fe6",
+                "url": "https://api.github.com/repos/powerkernel/yii-aws-sns/zipball/6d48e4cd503dff089c1f314c7618bc1d4fa6dcba",
+                "reference": "6d48e4cd503dff089c1f314c7618bc1d4fa6dcba",
                 "shasum": ""
             },
             "require": {
@@ -533,7 +533,7 @@
                 "aws",
                 "yii"
             ],
-            "time": "2018-05-31T07:38:30+00:00"
+            "time": "2018-05-31T11:46:42+00:00"
         },
         {
             "name": "powerkernel/yii-common",
@@ -541,7 +541,7 @@
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:powerkernel/yii-common.git",
-                "reference": "a6284fe62da5d037de2120ecbec8691aa7d91005"
+                "reference": "86bc8eafdf08d47b3d99655eaa85087a510d43e7"
             },
             "type": "yii2-module",
             "extra": {
@@ -569,7 +569,7 @@
                 "common",
                 "yii2"
             ],
-            "time": "2018-05-30T09:09:04+00:00"
+            "time": "2018-06-04T08:41:16+00:00"
         },
         {
             "name": "powerkernel/yii-core-api",
@@ -577,7 +577,7 @@
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:powerkernel/yii-core-api.git",
-                "reference": "f407e00e0212cd19c5d95d95c325999295973106"
+                "reference": "4c85486f2ac951182f531fa8de7877181bc42db3"
             },
             "type": "yii2-module",
             "extra": {
@@ -606,7 +606,7 @@
                 "core",
                 "yii2"
             ],
-            "time": "2018-05-31T07:50:05+00:00"
+            "time": "2018-06-04T08:41:49+00:00"
         },
         {
             "name": "psr/http-message",

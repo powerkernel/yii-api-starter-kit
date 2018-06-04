@@ -16,6 +16,7 @@ $config = [
     'name' => 'App Console',
     'basePath' => dirname(__DIR__) . '/src/console',
     'vendorPath' => dirname(__DIR__) . '/vendor',
+    'runtimePath' => dirname(__DIR__) . '/runtime',
     'bootstrap' => [],
     'controllerNamespace' => 'console\controllers',
     'controllerMap' => [

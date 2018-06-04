@@ -6,6 +6,7 @@
  */
 
 return [
+    'name'=>'My App',
     'languages' => [
         'en-US',
     ],

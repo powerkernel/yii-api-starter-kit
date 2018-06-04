@@ -9,7 +9,6 @@ defined('YII_DEBUG') or define('YII_DEBUG', true);
 defined('YII_ENV') or define('YII_ENV', 'dev');
 
 
-
 $common = require __DIR__ . '/common.php';
 $params = array_merge(
     require(__DIR__ . '/params.php'),
@@ -18,8 +17,10 @@ $params = array_merge(
 
 $config = [
     'id' => 'app-api',
+    'name' => $params['name'],
     'basePath' => dirname(__DIR__) . '/src/api',
     'vendorPath' => dirname(__DIR__) . '/vendor',
+    'runtimePath' => dirname(__DIR__) . '/runtime',
     'controllerNamespace' => 'api\controllers',
     'bootstrap' => ['configuration'],
     'aliases' => [
@@ -59,7 +60,7 @@ $config = [
             ],
         ],
         'request' => [
-            'enableCookieValidation'=>false,
+            'enableCookieValidation' => false,
             'parsers' => [
                 'application/json' => 'yii\web\JsonParser',
             ]
@@ -96,7 +97,7 @@ $config = [
             'identityClass' => 'powerkernel\yiicore\models\User',
             'enableAutoLogin' => false,
             'enableSession' => false,
-            'loginUrl'=>null,
+            'loginUrl' => null,
             //'identityCookie' => ['name' => '_identity-api', 'httpOnly' => true],
         ],
     ],
