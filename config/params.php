@@ -6,31 +6,43 @@
  */
 
 return [
-    'name'=>'My App',
+    'name' => 'My App',
     'languages' => [
         'en-US',
     ],
-    'demo_account'=>[
+    'account'=>[
+        'notification'=>[
+            'admin'=>[
+                'accountCreated'=>true,
+                'accountDeleted'=>true
+
+            ],
+            'user'=>[
+                'accountCreated'=>true,
+                'accountDeleted'=>true
+            ],
+        ],
     ],
-    'mailer'=>[
-        'from'=>['your-email@domain.com'=>'your name'],
+    'mailer' => [
+        'from' => ['your-email@domain.com' => 'your name'],
     ],
-    'organization'=>[
-        'legalName'=>'Power Kernel Inc',
-        'address'=>'', // String
-        'social'=>[
-            'google'=>[
+    'organization' => [
+        'legalName' => 'Power Kernel Inc',
+        'address' => '', // String
+        'social' => [
+            'google' => [
                 'url',
                 'icon',
             ],
-            'facebook'=>[
+            'facebook' => [
                 'url',
                 'icon',
             ],
             // ...
         ],
+        'adminEmail'=>'admin-email@domain.com'
     ],
-    'logos'=>[
-        'email'=>'', // URL
+    'logos' => [
+        'email' => '', // URL
     ]
 ];
