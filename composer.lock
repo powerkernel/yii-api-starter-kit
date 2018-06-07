@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.60.0",
+            "version": "3.61.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "172ed6346ab4d1df075f5106098ed5b6e653c934"
+                "reference": "5dabf378a52afd357fedd290f6b1837aec15eab8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/172ed6346ab4d1df075f5106098ed5b6e653c934",
-                "reference": "172ed6346ab4d1df075f5106098ed5b6e653c934",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/5dabf378a52afd357fedd290f6b1837aec15eab8",
+                "reference": "5dabf378a52afd357fedd290f6b1837aec15eab8",
                 "shasum": ""
             },
             "require": {
@@ -84,7 +84,7 @@
                 "s3",
                 "sdk"
             ],
-            "time": "2018-06-01T20:17:58+00:00"
+            "time": "2018-06-04T21:48:21+00:00"
         },
         {
             "name": "cebe/markdown",
@@ -577,7 +577,7 @@
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:powerkernel/yii-core-api.git",
-                "reference": "4c85486f2ac951182f531fa8de7877181bc42db3"
+                "reference": "6e731df82c69b1bb35239323775d658e4ba533b0"
             },
             "type": "yii2-module",
             "extra": {
@@ -606,7 +606,7 @@
                 "core",
                 "yii2"
             ],
-            "time": "2018-06-04T08:41:49+00:00"
+            "time": "2018-06-04T17:47:18+00:00"
         },
         {
             "name": "psr/http-message",

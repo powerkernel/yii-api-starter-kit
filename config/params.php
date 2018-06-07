@@ -15,7 +15,6 @@ return [
             'admin'=>[
                 'accountCreated'=>true,
                 'accountDeleted'=>true
-
             ],
             'user'=>[
                 'accountCreated'=>true,

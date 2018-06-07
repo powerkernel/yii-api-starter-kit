@@ -7,13 +7,14 @@
 
 namespace api\modules\v1\controllers;
 
-use yii\rest\Controller;
+use powerkernel\yiicommon\controllers\RestController;
+
 
 /**
  * Class DefaultController
  * @package api\modules\v1\controllers
  */
-class DefaultController extends Controller
+class DefaultController extends RestController
 {
 
     /**

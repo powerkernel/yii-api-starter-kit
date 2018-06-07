@@ -69,6 +69,7 @@ $config = [
             '__class' => yii\web\Response::class,
             'on beforeSend' => function ($event) {
                 $response = $event->sender;
+                //$response->setHeader('Access-Control-Allow-Origin', '*');
                 if ($response->data !== null && Yii::$app->request->get('suppress_response_code')) {
                     $response->data = [
                         'success' => $response->isSuccessful,

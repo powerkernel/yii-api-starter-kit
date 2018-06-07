@@ -7,13 +7,13 @@
 
 namespace api\controllers;
 
-use yii\rest\Controller;
+use powerkernel\yiicommon\controllers\RestController;
 
 /**
  * Class SiteController
  * @package api\controllers
  */
-class SiteController extends Controller
+class SiteController extends RestController
 {
 
     /**
