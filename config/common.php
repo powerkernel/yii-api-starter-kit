@@ -36,13 +36,7 @@ $config = [
             'secret' => $secrets['awssns']['secret'],
             'region' => $secrets['awssns']['region'],
         ],
-        'cache' => [
-            '__class' => yii\caching\Cache::class,
-            'handler' => [
-                '__class' => yii\caching\FileCache::class,
-                'keyPrefix' => 'app-api',
-            ],
-        ],
+
         'mutex' => [
             '__class' => yii\mutex\FileMutex::class
         ],
@@ -60,7 +54,16 @@ $config = [
             'assignmentCollection'=>'core_auth_assignment',
             'defaultRoles'=>['member']
         ],
-    ]
+    ],
+    'logger' => [
+        'traceLevel' => YII_DEBUG ? 3 : 0,
+        'targets' => [
+            [
+                '__class' => yii\log\FileTarget::class,
+                'levels' => ['error', 'warning'],
+            ],
+        ],
+    ],
 ];
 
 return $config;

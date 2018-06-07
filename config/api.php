@@ -27,24 +27,24 @@ $config = [
         '@bower' => '@vendor/bower-asset',
         '@npm' => '@vendor/npm-asset',
     ],
-    'logger' => [
-        'traceLevel' => YII_DEBUG ? 3 : 0,
-        'targets' => [
-            [
-                '__class' => yii\log\FileTarget::class,
-                'levels' => ['error', 'warning'],
-            ],
-        ],
-    ],
+    'logger' => $common['logger'],
     'components' => [
         'configuration' => ['__class' => 'api\bootstrap\Configuration'],
         'mongodb' => $common['components']['mongodb'],
         'mailer' => $common['components']['mailer'],
         'sns' => $common['components']['sns'],
-        'cache' => $common['components']['cache'],
+
         'mutex' => $common['components']['mutex'],
         'i18n' => $common['components']['i18n'],
         'authManager' => $common['components']['authManager'],
+
+        'cache' => [
+            '__class' => yii\caching\Cache::class,
+            'handler' => [
+                '__class' => yii\caching\FileCache::class,
+                'keyPrefix' => 'app-api',
+            ],
+        ],
 
         'request' => [
             'enableCookieValidation' => false,
@@ -65,6 +65,7 @@ $config = [
                 }
             }
         ],
+
         'assetManager' => [
             'appendTimestamp' => true,
         ],
