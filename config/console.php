@@ -8,12 +8,15 @@
 defined('YII_DEBUG') or define('YII_DEBUG', true);
 defined('YII_ENV') or define('YII_ENV', 'dev');
 
-$params = require __DIR__ . '/params.php';
-$db = require __DIR__ . '/db.php';
+$common = require __DIR__ . '/common.php';
+$params = array_merge(
+    require(__DIR__ . '/params.php'),
+    require(__DIR__ . '/params-local.php')
+);
 
 $config = [
     'id' => 'app-console',
-    'name' => 'App Console',
+    'name' => $params['name'],
     'basePath' => dirname(__DIR__) . '/src/console',
     'vendorPath' => dirname(__DIR__) . '/vendor',
     'runtimePath' => dirname(__DIR__) . '/runtime',
@@ -22,7 +25,6 @@ $config = [
     'controllerMap' => [
         'mongodb-migrate' => [
             '__class' => 'yii\mongodb\console\controllers\MigrateController',
-            'db' => 'db'
         ],
     ],
     'aliases' => [
@@ -39,27 +41,13 @@ $config = [
         ],
     ],
     'components' => [
-        'cache' => [
-            '__class' => yii\caching\Cache::class,
-            'handler' => [
-                '__class' => yii\caching\FileCache::class,
-                'keyPrefix' => 'app-console',
-            ],
-        ],
-        'mailer' => [
-            '__class' => yii\swiftmailer\Mailer::class,
-        ],
-        'mutex' => [
-            '__class' => yii\mutex\FileMutex::class
-        ],
-        'db' => $db,
-        'i18n' => [
-            'translations' => [
-                '*' => [
-                    '__class' => yii\i18n\PhpMessageSource::class,
-                ],
-            ],
-        ],
+        'mongodb' => $common['components']['mongodb'],
+        'mailer' => $common['components']['mailer'],
+        'sns' => $common['components']['sns'],
+        'cache' => $common['components']['cache'],
+        'mutex' => $common['components']['mutex'],
+        'i18n' => $common['components']['i18n'],
+        'authManager' => $common['components']['authManager'],
     ],
     'params' => $params,
     /*

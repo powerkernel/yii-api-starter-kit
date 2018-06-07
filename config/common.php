@@ -12,7 +12,6 @@ $config = [
             '__class' => '\yii\mongodb\Connection',
             'dsn' => $secrets['db']['dsn'],
             'options' => $secrets['db']['options']
-
         ],
         'mailer' => [
             '__class' => yii\swiftmailer\Mailer::class,
@@ -36,7 +35,31 @@ $config = [
             'key' => $secrets['awssns']['key'],
             'secret' => $secrets['awssns']['secret'],
             'region' => $secrets['awssns']['region'],
-        ]
+        ],
+        'cache' => [
+            '__class' => yii\caching\Cache::class,
+            'handler' => [
+                '__class' => yii\caching\FileCache::class,
+                'keyPrefix' => 'app-api',
+            ],
+        ],
+        'mutex' => [
+            '__class' => yii\mutex\FileMutex::class
+        ],
+        'i18n' => [
+            'translations' => [
+                '*' => [
+                    '__class' => yii\i18n\PhpMessageSource::class,
+                ],
+            ],
+        ],
+        'authManager' => [
+            'class' => 'yii\mongodb\rbac\MongoDbManager',
+            'itemCollection'=>'core_auth_item',
+            'ruleCollection'=>'core_auth_rule',
+            'assignmentCollection'=>'core_auth_assignment',
+            'defaultRoles'=>['member']
+        ],
     ]
 ];
 

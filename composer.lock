@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.61.0",
+            "version": "3.61.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "5dabf378a52afd357fedd290f6b1837aec15eab8"
+                "reference": "527d7d10b30a2294686d146b0a12b587f28057b0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/5dabf378a52afd357fedd290f6b1837aec15eab8",
-                "reference": "5dabf378a52afd357fedd290f6b1837aec15eab8",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/527d7d10b30a2294686d146b0a12b587f28057b0",
+                "reference": "527d7d10b30a2294686d146b0a12b587f28057b0",
                 "shasum": ""
             },
             "require": {
@@ -84,7 +84,7 @@
                 "s3",
                 "sdk"
             ],
-            "time": "2018-06-04T21:48:21+00:00"
+            "time": "2018-06-05T22:44:12+00:00"
         },
         {
             "name": "cebe/markdown",
@@ -541,7 +541,7 @@
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:powerkernel/yii-common.git",
-                "reference": "86bc8eafdf08d47b3d99655eaa85087a510d43e7"
+                "reference": "9996cf0a9d400afb263732c2a785d48b9870ca89"
             },
             "type": "yii2-module",
             "extra": {
@@ -569,7 +569,7 @@
                 "common",
                 "yii2"
             ],
-            "time": "2018-06-04T08:41:16+00:00"
+            "time": "2018-06-07T06:29:21+00:00"
         },
         {
             "name": "powerkernel/yii-core-api",
@@ -577,7 +577,7 @@
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:powerkernel/yii-core-api.git",
-                "reference": "6e731df82c69b1bb35239323775d658e4ba533b0"
+                "reference": "6c74b4e65ac4109051aebd4f14dd3ba23e906b49"
             },
             "type": "yii2-module",
             "extra": {
@@ -606,7 +606,7 @@
                 "core",
                 "yii2"
             ],
-            "time": "2018-06-04T17:47:18+00:00"
+            "time": "2018-06-07T06:30:49+00:00"
         },
         {
             "name": "psr/http-message",

@@ -41,24 +41,11 @@ $config = [
         'mongodb' => $common['components']['mongodb'],
         'mailer' => $common['components']['mailer'],
         'sns' => $common['components']['sns'],
+        'cache' => $common['components']['cache'],
+        'mutex' => $common['components']['mutex'],
+        'i18n' => $common['components']['i18n'],
+        'authManager' => $common['components']['authManager'],
 
-        'cache' => [
-            '__class' => yii\caching\Cache::class,
-            'handler' => [
-                '__class' => yii\caching\FileCache::class,
-                'keyPrefix' => 'app-api',
-            ],
-        ],
-        'mutex' => [
-            '__class' => yii\mutex\FileMutex::class
-        ],
-        'i18n' => [
-            'translations' => [
-                '*' => [
-                    '__class' => yii\i18n\PhpMessageSource::class,
-                ],
-            ],
-        ],
         'request' => [
             'enableCookieValidation' => false,
             'parsers' => [
@@ -69,7 +56,6 @@ $config = [
             '__class' => yii\web\Response::class,
             'on beforeSend' => function ($event) {
                 $response = $event->sender;
-                //$response->setHeader('Access-Control-Allow-Origin', '*');
                 if ($response->data !== null && Yii::$app->request->get('suppress_response_code')) {
                     $response->data = [
                         'success' => $response->isSuccessful,
