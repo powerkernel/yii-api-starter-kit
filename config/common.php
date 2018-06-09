@@ -36,7 +36,6 @@ $config = [
             'secret' => $secrets['awssns']['secret'],
             'region' => $secrets['awssns']['region'],
         ],
-
         'mutex' => [
             '__class' => yii\mutex\FileMutex::class
         ],

@@ -5,9 +5,6 @@
  * @copyright Copyright (c) 2018 Power Kernel
  */
 
-defined('YII_DEBUG') or define('YII_DEBUG', true);
-defined('YII_ENV') or define('YII_ENV', 'dev');
-
 
 $common = require __DIR__ . '/common.php';
 $params = array_merge(
@@ -33,11 +30,9 @@ $config = [
         'mongodb' => $common['components']['mongodb'],
         'mailer' => $common['components']['mailer'],
         'sns' => $common['components']['sns'],
-
         'mutex' => $common['components']['mutex'],
         'i18n' => $common['components']['i18n'],
         'authManager' => $common['components']['authManager'],
-
         'cache' => [
             '__class' => yii\caching\Cache::class,
             'handler' => [
@@ -45,9 +40,9 @@ $config = [
                 'keyPrefix' => 'app-api',
             ],
         ],
-
         'request' => [
             'enableCookieValidation' => false,
+            'enableCsrfValidation'=>false,
             'parsers' => [
                 'application/json' => 'yii\web\JsonParser',
             ]
@@ -56,6 +51,7 @@ $config = [
             '__class' => yii\web\Response::class,
             'on beforeSend' => function ($event) {
                 $response = $event->sender;
+                $response->setHeader('Access-Control-Allow-Origin', '*');
                 if ($response->data !== null && Yii::$app->request->get('suppress_response_code')) {
                     $response->data = [
                         'success' => $response->isSuccessful,
@@ -65,7 +61,6 @@ $config = [
                 }
             }
         ],
-
         'assetManager' => [
             'appendTimestamp' => true,
         ],
@@ -86,7 +81,6 @@ $config = [
             'enableAutoLogin' => false,
             'enableSession' => false,
             'loginUrl' => null,
-            //'identityCookie' => ['name' => '_identity-api', 'httpOnly' => true],
         ],
     ],
     'modules' => [

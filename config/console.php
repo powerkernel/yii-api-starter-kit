@@ -5,8 +5,6 @@
  * @copyright Copyright (c) 2018 Power Kernel
  */
 
-defined('YII_DEBUG') or define('YII_DEBUG', true);
-defined('YII_ENV') or define('YII_ENV', 'dev');
 
 $common = require __DIR__ . '/common.php';
 $params = array_merge(
@@ -39,7 +37,6 @@ $config = [
         'mutex' => $common['components']['mutex'],
         'i18n' => $common['components']['i18n'],
         'authManager' => $common['components']['authManager'],
-
         'cache' => [
             '__class' => yii\caching\Cache::class,
             'handler' => [
