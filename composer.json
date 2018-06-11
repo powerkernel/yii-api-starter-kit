@@ -27,7 +27,8 @@
 
     "powerkernel/yii-common": "@dev",
     "powerkernel/yii-core-api": "@dev",
-    "powerkernel/yii-aws-sns": "@dev"
+    "powerkernel/yii-aws-sns": "@dev",
+    "powerkernel/yii-laundry": "@dev"
   },
   "require-dev": {
     "yiisoft/yii2-debug": "2.1.x-dev",
@@ -47,6 +48,10 @@
     {
       "type": "git",
       "url": "git@bitbucket.org:powerkernel/yii-common.git"
+    },
+    {
+      "type": "git",
+      "url": "git@bitbucket.org:powerkernel/yii-laundry.git"
     }
   ],
   "autoload": {

@@ -39,9 +39,16 @@ return [
             ],
             // ...
         ],
-        'adminEmail'=>'admin-email@domain.com'
+        'adminEmail'=>'admin-email@domain.com',
     ],
     'logos' => [
         'email' => '', // URL
+    ],
+    'modules'=>[
+        'v1'=>[
+            'core' => [
+                'class' => 'powerkernel\yiicore\v1\Module',
+            ],
+        ]
     ]
 ];

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7c8069d050703d123c0689d869e49654",
+    "content-hash": "b3d475f1bf56ff79294e9e4ba97d019b",
     "packages": [
         {
             "name": "aws/aws-sdk-php",
@@ -613,6 +613,46 @@
                 "yii2"
             ],
             "time": "2018-06-07T08:56:53+00:00"
+        },
+        {
+            "name": "powerkernel/yii-laundry",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "git@bitbucket.org:powerkernel/yii-laundry.git",
+                "reference": "dcfb136db33f8f8d823fcf386bcca4785b20fb78"
+            },
+            "require": {
+                "yiisoft/yii2": "2.1.x-dev"
+            },
+            "type": "yii2-module",
+            "extra": {
+                "asset-installer-paths": {
+                    "npm-asset-library": "vendor/npm",
+                    "bower-asset-library": "vendor/bower"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "powerkernel\\yiilaundry\\": "src"
+                }
+            },
+            "license": [
+                "Private"
+            ],
+            "authors": [
+                {
+                    "name": "Harry Tang",
+                    "email": "harry@powerkernel.com"
+                }
+            ],
+            "description": "Yii Laundry API",
+            "keywords": [
+                "api",
+                "laundry",
+                "yii2"
+            ],
+            "time": "2018-06-11T03:39:34+00:00"
         },
         {
             "name": "psr/http-message",
@@ -3055,6 +3095,7 @@
         "powerkernel/yii-common": 20,
         "powerkernel/yii-core-api": 20,
         "powerkernel/yii-aws-sns": 20,
+        "powerkernel/yii-laundry": 20,
         "yiisoft/yii2-debug": 20,
         "yiisoft/yii2-gii": 20,
         "yiisoft/yii2-faker": 20

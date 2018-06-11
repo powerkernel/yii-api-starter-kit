@@ -9,9 +9,12 @@ The minimum requirement by this project template that your Web server supports P
 
 # INSTALLATION
 
-Download composer
+Install [composer](http://getcomposer.org/download/).
 
-Download the archive file, unpack then run
+Download the archive file and then unpack it. 
+
+Copy `composer.json.sample` to `composer.json` and update your `require` data. Then run:
+
 ~~~
 php composer update
 ~~~

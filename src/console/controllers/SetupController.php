@@ -27,6 +27,7 @@ class SetupController extends Controller
      *
      * @return int Exit code
      * @throws \yii\mongodb\Exception
+     * @throws \Exception
      */
     public function actionIndex()
     {
