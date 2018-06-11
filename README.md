@@ -1,11 +1,3 @@
-<p align="center">
-    <a href="https://github.com/yiisoft" target="_blank">
-        <img src="https://avatars0.githubusercontent.com/u/993323" height="100px">
-    </a>
-    <h1 align="center">Yii 2.1 Project Template</h1>
-    <br>
-</p>
-
 Yii 2.1 Project Template is a skeleton [Yii 2](http://www.yiiframework.com/) application best for
 rapidly creating projects.
 
@@ -17,6 +9,8 @@ The minimum requirement by this project template that your Web server supports P
 
 # INSTALLATION
 
+Download composer
+
 Download the archive file, unpack then run
 ~~~
 php composer update
@@ -26,21 +20,29 @@ php composer update
 CONFIGURATION
 -------------
 
-Rename `/config/secrets.php.sample` to `/config/secrets.php` and put your real data.
+Copy `/config/secrets.php.sample` to `/config/secrets.php` and put your real data.
 Copy `/config/params.php` to `/config/params-local.php` and update real data.
 
 
-**NOTES:**
-- DOT NOT edit any files except the composer.json
+**NOTE:**
+- DOT NOT edit any files except the composer.json, params-local.php, secrets.php
 
 SETUP
 -----
 
-Just run the following commands in /bin directory
+If there is any module need to install, run all migration scrips you have, like below for the core module:
 ~~~
 php yii mongodb-migrate --migrationPath=@vendor/powerkernel/yii-core-api/src/migrations --migrationCollection=core_migration
+// ...
+~~~
+
+Setup the application
+~~~
 php yii setup
 ~~~
+
+**NOTE**
+Run the commands in /bin directory
 
 TESTING
 -------
