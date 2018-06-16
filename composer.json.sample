@@ -19,7 +19,7 @@
   "prefer-stable": true,
   "require": {
     "php": ">=7.1.0",
-    "yiisoft/yii2": "2.1.x-dev",
+    "yiisoft/yii2": "3.0.x-dev",
     "yiisoft/yii2-swiftmailer": "2.2.x-dev",
     "yiisoft/yii2-rest": "@dev",
     "yiisoft/yii2-mongodb": "2.2.x-dev",

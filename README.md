@@ -1,4 +1,4 @@
-Yii 2.1 Project Template is a skeleton [Yii 2](http://www.yiiframework.com/) application best for
+Yii 3.0 Project Template is a skeleton [Yii](http://www.yiiframework.com/) application best for
 rapidly creating projects.
 
 # REQUIREMENTS
