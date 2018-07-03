@@ -4,7 +4,9 @@ Yii API Starter Kit is a skeleton application best for rapidly creating API proj
 
 REQUIREMENTS
 ------------
-The minimum requirement by this project template that your Web server supports PHP 7.1.
+- PHP 7.1+
+- MongoDB 3.6+
+
 
 INSTALLATION
 ------------
