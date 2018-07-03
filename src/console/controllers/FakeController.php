@@ -8,7 +8,7 @@
 namespace console\controllers;
 
 
-use powerkernel\yiicore\models\User;
+use powerkernel\yiiuser\models\User;
 use yii\console\Controller;
 use yii\console\ExitCode;
 
@@ -45,7 +45,7 @@ class FakeController extends Controller
             $users[$i]->timezone = $faker->timezone;
             if ($users[$i]->save()) {
                 $percent = round(($i + 1) / $num, 2) * 100;
-                echo "{$percent} completed...\n";
+                echo "{$percent}% completed...\n";
             }
         }
         unset($users);

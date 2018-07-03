@@ -46,8 +46,11 @@ return [
     ],
     'modules'=>[
         'v1'=>[
-            'core' => [
-                'class' => 'powerkernel\yiicore\v1\Module',
+            'user' => [
+                'class' => 'powerkernel\yiiuser\v1\Module',
+            ],
+            'auth' => [
+                'class' => 'powerkernel\yiiauth\v1\Module',
             ],
         ]
     ]

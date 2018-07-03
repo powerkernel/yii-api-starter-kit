@@ -35,7 +35,7 @@ SETUP
 
 If there is any module need to install, run all migration scrips you have, like below for the core module:
 ~~~
-php yii mongodb-migrate --migrationPath=@vendor/powerkernel/yii-core-api/src/migrations --migrationCollection=core_migration
+php yii mongodb-migrate --migrationPath=@vendor/powerkernel/yii-user/src/migrations --migrationCollection=user_migration
 // ...
 ~~~
 

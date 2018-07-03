@@ -8,7 +8,7 @@
 namespace console\controllers;
 
 
-use powerkernel\yiicore\models\User;
+use powerkernel\yiiuser\models\User;
 use yii\console\Controller;
 use yii\console\ExitCode;
 

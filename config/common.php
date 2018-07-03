@@ -48,9 +48,9 @@ $config = [
         ],
         'authManager' => [
             'class' => 'yii\mongodb\rbac\MongoDbManager',
-            'itemCollection'=>'core_auth_item',
-            'ruleCollection'=>'core_auth_rule',
-            'assignmentCollection'=>'core_auth_assignment',
+            'itemCollection'=>'auth_item',
+            'ruleCollection'=>'auth_rule',
+            'assignmentCollection'=>'auth_assignment',
             'defaultRoles'=>['member']
         ],
     ],

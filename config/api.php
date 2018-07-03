@@ -77,7 +77,7 @@ $config = [
 
         ],
         'user' => [
-            'identityClass' => 'powerkernel\yiicore\models\User',
+            'identityClass' => 'powerkernel\yiiuser\models\User',
             'enableAutoLogin' => false,
             'enableSession' => false,
             'loginUrl' => null,
