@@ -1,13 +1,13 @@
-Yii 3.0 Project Template is a skeleton [Yii](http://www.yiiframework.com/) application best for
-rapidly creating projects.
+Yii API Starter Kit
+===================
+Yii API Starter Kit is a skeleton application best for rapidly creating API projects.
 
-# REQUIREMENTS
- 
-
+REQUIREMENTS
+------------
 The minimum requirement by this project template that your Web server supports PHP 7.1.
 
-
-# INSTALLATION
+INSTALLATION
+------------
 
 Install [composer](http://getcomposer.org/download/).
 

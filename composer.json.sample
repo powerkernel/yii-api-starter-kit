@@ -1,10 +1,11 @@
 {
-  "name": "powerkernel/core",
-  "description": "Core API System",
+  "name": "powerkernel/yii-api-starter-kit",
+  "description": "Yii API Starter Kit",
   "keywords": [
-    "yii2",
+    "yii",
     "api",
-    "core"
+    "starter",
+    "kit"
   ],
   "homepage": "https://powerkernel.com",
   "type": "project",
