@@ -33,10 +33,10 @@ Copy `/config/params.php` to `/config/params-local.php` and update real data.
 SETUP
 -----
 
-If there is any module need to install, run all migration scrips you have, like below for the core module:
+Run all migration scrips:
 ~~~
 php yii mongodb-migrate --migrationPath=@vendor/powerkernel/yii-user/src/migrations --migrationCollection=user_migration
-// ...
+php yii mongodb-migrate --migrationPath=@vendor/powerkernel/yii-auth/src/migrations --migrationCollection=auth_migration
 ~~~
 
 Setup the application
