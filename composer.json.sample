@@ -24,7 +24,7 @@
     "yiisoft/yii2-swiftmailer": "2.2.x-dev",
     "yiisoft/yii2-rest": "@dev",
     "yiisoft/yii2-mongodb": "2.2.x-dev",
-    "harrytang/yii2-httpclient": "2.1.x-dev",
+    "yiisoft/yii2-httpclient": "2.1.x-dev",
 
     "powerkernel/yii-common": "@dev",
     "powerkernel/yii-user": "@dev",
@@ -34,21 +34,13 @@
   "require-dev": {
     "yiisoft/yii2-debug": "2.1.x-dev",
     "yiisoft/yii2-gii": "2.1.x-dev",
-    "harrytang/yii2-faker": "2.1.x-dev",
+    "yiisoft/yii2-faker": "2.1.x-dev",
     "phpunit/phpunit": "~7.0.2"
   },
   "repositories": [
     {
       "type": "composer",
       "url": "https://asset-packagist.org"
-    },
-    {
-      "type": "git",
-      "url": "git@github.com:harrytang/yii2-faker.git"
-    },
-    {
-      "type": "git",
-      "url": "git@github.com:harrytang/yii2-httpclient.git"
     }
   ],
   "autoload": {
