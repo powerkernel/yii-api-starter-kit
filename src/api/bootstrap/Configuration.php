@@ -10,6 +10,10 @@ namespace api\bootstrap;
 
 use yii\base\Component;
 
+/**
+ * Class Configuration
+ * @package api\bootstrap
+ */
 class Configuration extends Component
 {
     public function init()
