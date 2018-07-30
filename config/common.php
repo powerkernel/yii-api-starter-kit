@@ -36,6 +36,14 @@ $config = [
             'secret' => $secrets['awssns']['secret'],
             'region' => $secrets['awssns']['region'],
         ],
+        'cloudinary' => [
+            'class' => powerkernel\yiicloudinary\CloudinaryComponent::class,
+            'cloud_name' => $secrets['cloudinary']['cloud_name'],
+            'api_key' => $secrets['cloudinary']['api_key'],
+            'api_secret' => $secrets['cloudinary']['api_secret'],
+            'cdn_subdomain' => $secrets['cloudinary']['cdn_subdomain'],
+            'useSiteDomain' => $secrets['cloudinary']['useSiteDomain'],
+        ],
         'mutex' => [
             '__class' => yii\mutex\FileMutex::class
         ],

@@ -30,6 +30,7 @@ $config = [
         'mongodb' => $common['components']['mongodb'],
         'mailer' => $common['components']['mailer'],
         'sns' => $common['components']['sns'],
+        'cloudinary' => $common['components']['cloudinary'],
         'mutex' => $common['components']['mutex'],
         'i18n' => $common['components']['i18n'],
         'authManager' => $common['components']['authManager'],
@@ -82,6 +83,7 @@ $config = [
             'enableSession' => false,
             'loginUrl' => null,
         ],
+
     ],
     'modules' => [
         'v1' => [
