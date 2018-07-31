@@ -7,6 +7,7 @@
 
 return [
     'name' => 'My App',
+    'domain' => 'your-domain.com',
     'languages' => [
         'en-US',
     ],
