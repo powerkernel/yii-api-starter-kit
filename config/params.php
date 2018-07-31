@@ -29,6 +29,7 @@ return [
     'organization' => [
         'legalName' => 'Power Kernel Inc',
         'address' => '', // String
+        'phone'=>'',
         'social' => [
             'google' => [
                 'url',
@@ -40,6 +41,7 @@ return [
             ],
             // ...
         ],
+        'contactEmail'=>'group-email@domain.com',
         'adminEmail'=>'admin-email@domain.com',
     ],
     'logos' => [
