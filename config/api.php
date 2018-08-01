@@ -34,6 +34,7 @@ $config = [
         'mutex' => $common['components']['mutex'],
         'i18n' => $common['components']['i18n'],
         'authManager' => $common['components']['authManager'],
+        'authClientCollection' => $common['components']['authClientCollection'],
         'cache' => [
             '__class' => yii\caching\Cache::class,
             'handler' => [
@@ -43,7 +44,7 @@ $config = [
         ],
         'request' => [
             'enableCookieValidation' => false,
-            'enableCsrfValidation'=>false,
+            'enableCsrfValidation' => false,
             'parsers' => [
                 'application/json' => 'yii\web\JsonParser',
             ]
