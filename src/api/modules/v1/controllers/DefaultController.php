@@ -30,4 +30,15 @@ class DefaultController extends RestController
         ];
     }
 
+    /**
+     * get basic contact info
+     * @return array
+     */
+    public function actionContact(){
+        return [
+            'success'=>true,
+            'data'=> \Yii::$app->params['organization']
+        ];
+    }
+
 }

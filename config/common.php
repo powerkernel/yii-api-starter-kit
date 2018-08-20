@@ -61,6 +61,21 @@ $config = [
             'assignmentCollection'=>'auth_assignment',
             'defaultRoles'=>['member']
         ],
+        'authClientCollection' => [
+            '__class' => yii\authclient\Collection::class,
+            'clients' => [
+                'google' => [
+                    'class' => powerkernel\yiiauth\clients\Google::class,
+                    'clientId' => $secrets['authClient']['google']['clientId'],
+                    'clientSecret' => $secrets['authClient']['google']['clientSecret'],
+                ],
+                'facebook' => [
+                    '__class' => powerkernel\yiiauth\clients\Facebook::class,
+                    'clientId' => $secrets['authClient']['facebook']['clientId'],
+                    'clientSecret' => $secrets['authClient']['facebook']['clientSecret'],
+                ],
+            ],
+        ]
     ],
     'logger' => [
         'traceLevel' => YII_DEBUG ? 3 : 0,
