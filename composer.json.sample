@@ -21,10 +21,10 @@
   "require": {
     "php": ">=7.1.0",
     "yiisoft/yii2": "3.0.x-dev",
-    "yiisoft/yii2-swiftmailer": "2.2.x-dev",
-    "yiisoft/yii2-rest": "@dev",
-    "yiisoft/yii2-mongodb": "2.2.x-dev",
-    "yiisoft/yii2-httpclient": "2.1.x-dev",
+    "yiisoft/yii-swift-mailer": "@dev",
+    "yiisoft/yii-http-client": "@dev",
+    "yiisoft/yii-rest": "@dev",
+    "yiisoft/yii-mongodb": "@dev",
 
     "powerkernel/yii-common": "@dev",
     "powerkernel/yii-user": "@dev",
@@ -41,11 +41,26 @@
     {
       "type": "composer",
       "url": "https://asset-packagist.org"
+    },
+    {
+      "type": "git",
+      "url": "git@github.com:harrytang/yii-http-client.git"
+    },
+    {
+      "type": "git",
+      "url": "git@github.com:harrytang/yii-swift-mailer.git"
+    },
+    {
+      "type": "git",
+      "url": "git@github.com:harrytang/yii-rest.git"
+    },
+    {
+      "type": "git",
+      "url": "git@github.com:harrytang/yii-mongodb.git"
     }
   ],
   "autoload": {
     "psr-4": {
-      "web\\": "src/web",
       "api\\": "src/api",
       "console\\": "src/console"
     }
