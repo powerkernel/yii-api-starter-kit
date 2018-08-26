@@ -24,6 +24,7 @@
     "yiisoft/yii2-swiftmailer": "2.2.x-dev",
     "yiisoft/yii2-rest": "@dev",
     "yiisoft/yii2-mongodb": "2.2.x-dev",
+    "yiisoft/yii2-authclient": "2.2.x-dev",
     "yiisoft/yii2-httpclient": "2.1.x-dev",
 
     "powerkernel/yii-common": "@dev",

@@ -68,11 +68,19 @@ $config = [
                     'class' => powerkernel\yiiauth\clients\Google::class,
                     'clientId' => $secrets['authClient']['google']['clientId'],
                     'clientSecret' => $secrets['authClient']['google']['clientSecret'],
+                    'redirect_uri' => $secrets['authClient']['google']['redirect_uri'],
+                ],
+                'google-web' => [
+                    'class' => powerkernel\yiiauth\clients\Google::class,
+                    'clientId' => $secrets['authClient']['google-web']['clientId'],
+                    'clientSecret' => $secrets['authClient']['google-web']['clientSecret'],
+                    'redirect_uri' => $secrets['authClient']['google-web']['redirect_uri'],
                 ],
                 'facebook' => [
                     '__class' => powerkernel\yiiauth\clients\Facebook::class,
                     'clientId' => $secrets['authClient']['facebook']['clientId'],
                     'clientSecret' => $secrets['authClient']['facebook']['clientSecret'],
+                    'redirect_uri' => $secrets['authClient']['facebook']['redirect_uri'],
                 ],
             ],
         ]
