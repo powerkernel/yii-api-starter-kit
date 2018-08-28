@@ -20,8 +20,10 @@
   "prefer-stable": true,
   "require": {
     "php": ">=7.1.0",
+    "ext-mongodb": ">=1.0.0",
+    "swiftmailer/swiftmailer": "~6.0",
     "yiisoft/yii2": "3.0.x-dev",
-    "yiisoft/yii2-authclient": "2.2.x-dev",
+    "yiisoft/yii-auth-client": "2.2.x-dev",
     "yiisoft/yii-swift-mailer": "@dev",
     "yiisoft/yii-http-client": "@dev",
     "yiisoft/yii-rest": "@dev",
@@ -30,13 +32,12 @@
     "powerkernel/yii-common": "@dev",
     "powerkernel/yii-user": "@dev",
     "powerkernel/yii-auth": "@dev",
-    "powerkernel/yii-aws-sns": "@dev"
+    "powerkernel/yii-aws-sns": "@dev",
+    "powerkernel/yii-cloudinary": "@dev"
   },
   "require-dev": {
-    "yiisoft/yii2-debug": "2.1.x-dev",
-    "yiisoft/yii2-gii": "2.1.x-dev",
-    "yiisoft/yii2-faker": "2.1.x-dev",
-    "phpunit/phpunit": "~7.0.2"
+    "phpunit/phpunit": "~7.0.2",
+    "yiisoft/yii-gii": "@dev"
   },
   "repositories": [
     {
@@ -58,6 +59,10 @@
     {
       "type": "git",
       "url": "git@github.com:harrytang/yii-mongodb.git"
+    },
+    {
+      "type": "git",
+      "url": "git@github.com:harrytang/yii-gii.git"
     }
   ],
   "autoload": {
