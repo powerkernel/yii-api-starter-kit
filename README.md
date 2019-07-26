@@ -1,5 +1,8 @@
 Yii API Starter Kit
 ===================
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/powerkernel/yii-api-starter-kit.svg)](https://greenkeeper.io/)
+
 Yii API Starter Kit is a skeleton application best for rapidly creating API projects.
 
 REQUIREMENTS
